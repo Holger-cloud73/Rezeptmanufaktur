@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-label="Spaghetti Carbonara">
+  <rect width="800" height="420" fill="#E9C88A"/>
+  <ellipse cx="400" cy="230" rx="280" ry="130" fill="#F3DCA8"/>
+  <g stroke="#D9A93B" stroke-width="8" fill="none" opacity="0.85">
+    <path d="M260 180 C 340 280, 380 200, 460 290"/>
+    <path d="M320 160 C 400 260, 440 180, 520 270"/>
+    <path d="M380 170 C 460 270, 500 190, 580 280"/>
+  </g>
+  <circle cx="360" cy="220" r="10" fill="#8A6B15"/>
+  <circle cx="430" cy="200" r="10" fill="#8A6B15"/>
+  <circle cx="480" cy="240" r="9" fill="#8A6B15"/>
+  <circle cx="340" cy="260" r="8" fill="#3E6A22"/>
+  <circle cx="500" cy="200" r="8" fill="#3E6A22"/>
+</svg>

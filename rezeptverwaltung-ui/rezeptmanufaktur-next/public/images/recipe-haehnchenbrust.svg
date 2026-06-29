@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 220" role="img" aria-label="Gegrillte Haehnchenbrust">
+  <rect width="300" height="220" fill="#D9A463"/>
+  <ellipse cx="150" cy="140" rx="85" ry="48" fill="#B97A3D"/>
+  <g stroke="#7A4E22" stroke-width="4">
+    <line x1="100" y1="120" x2="200" y2="120"/>
+    <line x1="95" y1="140" x2="205" y2="140"/>
+    <line x1="100" y1="160" x2="200" y2="160"/>
+  </g>
+</svg>

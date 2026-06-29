@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 220" role="img" aria-label="Salate">
+  <rect width="300" height="220" fill="#9FC270"/>
+  <ellipse cx="150" cy="160" rx="110" ry="35" fill="#FFFFFF" opacity="0.8"/>
+  <circle cx="110" cy="120" r="28" fill="#5E8E35"/>
+  <circle cx="160" cy="110" r="32" fill="#6FA043"/>
+  <circle cx="205" cy="130" r="24" fill="#4F7F2B"/>
+  <circle cx="130" cy="150" r="10" fill="#E34D4D"/>
+  <circle cx="180" cy="155" r="10" fill="#E34D4D"/>
+</svg>

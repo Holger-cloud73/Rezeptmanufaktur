@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 220" role="img" aria-label="Backen">
+  <rect width="300" height="220" fill="#E8C77B"/>
+  <ellipse cx="150" cy="140" rx="95" ry="55" fill="#A9682E"/>
+  <ellipse cx="150" cy="120" rx="95" ry="50" fill="#C98A45"/>
+  <ellipse cx="110" cy="95" rx="22" ry="16" fill="#EFD9A8"/>
+  <ellipse cx="170" cy="90" rx="18" ry="14" fill="#EFD9A8"/>
+  <ellipse cx="195" cy="110" rx="16" ry="12" fill="#EFD9A8"/>
+</svg>
