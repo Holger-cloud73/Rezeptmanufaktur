@@ -28,7 +28,7 @@
           <div class="form-group">
             <label for="recipe-category" class="form-label">Kategorie</label>
             <select id="recipe-category" name="category" class="form-select" required>
-              <option value="" selected>Kategorie wählen…</option>
+              <option value="" selected disabled hidden>Kategorie wählen…</option>
               <option value="backen">Backen</option>
               <option value="kochen">Kochen</option>
               <option value="salate">Salate</option>
@@ -43,7 +43,8 @@
 
           <div class="form-group">
             <label for="recipe-image" class="form-label">Rezeptbild <span class="form-label__optional">(optional)</span></label>
-            <label for="recipe-image" class="upload-field">
+            <label class="upload-field">
+              <input type="file" id="recipe-image" name="image" accept="image/*" class="visually-hidden" />
               <svg class="upload-field__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                 <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                 <polyline points="17 8 12 3 7 8"></polyline>
@@ -51,7 +52,6 @@
               </svg>
               <span class="upload-field__text">Bild auswählen oder hierher ziehen</span>
             </label>
-            <input type="file" id="recipe-image" name="image" accept="image/*" class="visually-hidden" />
           </div>
 
           <div class="form-group">
@@ -112,7 +112,8 @@
               <div class="step-input__field">
                 <label for="step-1-text" class="visually-hidden">Beschreibung Schritt 1</label>
                 <textarea id="step-1-text" name="steps[1][text]" class="form-textarea step-input__textarea" placeholder="Wasser salzen und Spaghetti bissfest kochen."></textarea>
-                <label for="step-1-image" class="upload-field upload-field--compact">
+                <label class="upload-field upload-field--compact">
+                  <input type="file" id="step-1-image" name="steps[1][image]" accept="image/*" class="visually-hidden" />
                   <svg class="upload-field__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                     <polyline points="17 8 12 3 7 8"></polyline>
@@ -120,7 +121,6 @@
                   </svg>
                   <span class="upload-field__text">Bild hinzufügen</span>
                 </label>
-                <input type="file" id="step-1-image" name="steps[1][image]" accept="image/*" class="visually-hidden" />
               </div>
               <button type="button" class="icon-btn step-input__delete" aria-label="Schritt 1 löschen">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -137,7 +137,8 @@
               <div class="step-input__field">
                 <label for="step-2-text" class="visually-hidden">Beschreibung Schritt 2</label>
                 <textarea id="step-2-text" name="steps[2][text]" class="form-textarea step-input__textarea" placeholder="Speck anbraten, bis er knusprig ist."></textarea>
-                <label for="step-2-image" class="upload-field upload-field--compact">
+                <label class="upload-field upload-field--compact">
+                  <input type="file" id="step-2-image" name="steps[2][image]" accept="image/*" class="visually-hidden" />
                   <svg class="upload-field__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
                     <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
                     <polyline points="17 8 12 3 7 8"></polyline>
@@ -145,7 +146,6 @@
                   </svg>
                   <span class="upload-field__text">Bild hinzufügen</span>
                 </label>
-                <input type="file" id="step-2-image" name="steps[2][image]" accept="image/*" class="visually-hidden" />
               </div>
               <button type="button" class="icon-btn step-input__delete" aria-label="Schritt 2 löschen">
                 <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
@@ -157,8 +157,8 @@
               </button>
             </div>
 
-            <button type="button" class="btn btn--secondary add-step">
-              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+            <button type="button" class="btn btn--secondary btn--icon-leading add-step">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
                 <line x1="12" y1="5" x2="12" y2="19"></line>
                 <line x1="5" y1="12" x2="19" y2="12"></line>
               </svg>
