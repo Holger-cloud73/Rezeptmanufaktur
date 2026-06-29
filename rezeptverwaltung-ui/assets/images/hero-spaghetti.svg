@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" role="img" aria-label="Spaghetti Gericht in warmem Licht">
+  <defs>
+    <linearGradient id="g1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#E7B23A"/>
+      <stop offset="55%" stop-color="#C97A2B"/>
+      <stop offset="100%" stop-color="#7A3E1D"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="600" fill="url(#g1)"/>
+  <circle cx="600" cy="330" r="230" fill="#F3D9A4" opacity="0.9"/>
+  <g stroke="#D98A2B" stroke-width="10" fill="none" opacity="0.8">
+    <path d="M400 250 C 480 380, 520 300, 600 400"/>
+    <path d="M460 230 C 540 360, 580 280, 660 380"/>
+    <path d="M520 220 C 600 350, 640 270, 720 370"/>
+    <path d="M580 230 C 660 360, 700 280, 780 380"/>
+  </g>
+  <circle cx="520" cy="300" r="14" fill="#B83B2E"/>
+  <circle cx="610" cy="270" r="14" fill="#B83B2E"/>
+  <circle cx="690" cy="320" r="12" fill="#B83B2E"/>
+  <circle cx="560" cy="360" r="12" fill="#6B8E3D"/>
+  <circle cx="650" cy="350" r="10" fill="#6B8E3D"/>
+</svg>

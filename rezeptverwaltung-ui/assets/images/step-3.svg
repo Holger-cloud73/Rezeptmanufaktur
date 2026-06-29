@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 160" role="img" aria-label="Zubereitungsschritt 3">
+  <rect width="160" height="160" fill="#F3E7E0"/>
+  <ellipse cx="80" cy="95" rx="55" ry="32" fill="#E9C88A"/>
+  <g stroke="#D9A93B" stroke-width="5" fill="none">
+    <path d="M45 90 C 65 120, 80 90, 100 115"/>
+    <path d="M60 80 C 80 110, 95 80, 115 105"/>
+  </g>
+</svg>

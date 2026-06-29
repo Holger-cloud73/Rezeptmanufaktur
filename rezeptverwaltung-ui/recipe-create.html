@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rezeptbuch – Neues Rezept anlegen</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <div class="app-shell">
+    <header class="page-header">
+      <div class="container page-header__inner">
+        <div class="page-header__left">
+          <a href="index.html" class="icon-btn" aria-label="Zurück zur Startseite">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <line x1="19" y1="12" x2="5" y2="12"></line>
+              <polyline points="12 19 5 12 12 5"></polyline>
+            </svg>
+          </a>
+          <h1 class="page-header__title">Neues Rezept anlegen</h1>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="container section">
+        <form action="#" method="post" novalidate>
+          <div class="form-group">
+            <label for="recipe-category" class="form-label">Kategorie</label>
+            <select id="recipe-category" name="category" class="form-select" required>
+              <option value="" selected>Kategorie wählen…</option>
+              <option value="backen">Backen</option>
+              <option value="kochen">Kochen</option>
+              <option value="salate">Salate</option>
+              <option value="suppen">Suppen</option>
+            </select>
+          </div>
+
+          <div class="form-group">
+            <label for="recipe-name" class="form-label">Rezeptname</label>
+            <input type="text" id="recipe-name" name="name" class="form-input" placeholder="z. B. Spaghetti Carbonara" required />
+          </div>
+
+          <div class="form-group">
+            <label for="recipe-image" class="form-label">Rezeptbild <span class="form-label__optional">(optional)</span></label>
+            <label for="recipe-image" class="upload-field">
+              <svg class="upload-field__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                <polyline points="17 8 12 3 7 8"></polyline>
+                <line x1="12" y1="3" x2="12" y2="15"></line>
+              </svg>
+              <span class="upload-field__text">Bild auswählen oder hierher ziehen</span>
+            </label>
+            <input type="file" id="recipe-image" name="image" accept="image/*" class="visually-hidden" />
+          </div>
+
+          <div class="form-group">
+            <label for="recipe-description" class="form-label">Beschreibung</label>
+            <textarea id="recipe-description" name="description" class="form-textarea" placeholder="Kurze Beschreibung des Rezepts…"></textarea>
+          </div>
+
+          <div class="grid grid--form-two-col">
+            <div class="form-group">
+              <label for="recipe-ingredients" class="form-label">Zutaten</label>
+              <textarea
+                id="recipe-ingredients"
+                name="ingredients"
+                class="form-textarea form-textarea--ingredients"
+                placeholder="z. B.&#10;200 g Spaghetti&#10;100 g Speck&#10;2 Eier&#10;50 g Parmesan"
+              ></textarea>
+            </div>
+
+            <div>
+              <div class="form-group">
+                <label for="recipe-prep-time" class="form-label">Zubereitungszeit</label>
+                <input type="text" id="recipe-prep-time" name="prep-time" class="form-input" placeholder="z. B. 20 Min." />
+              </div>
+              <div class="form-group">
+                <label for="recipe-cook-time" class="form-label">Gar-/Backzeit</label>
+                <input type="text" id="recipe-cook-time" name="cook-time" class="form-input" placeholder="z. B. 15 Min." />
+              </div>
+              <div class="form-group">
+                <label for="recipe-note" class="form-label">Hinweis <span class="form-label__optional">(optional)</span></label>
+                <input type="text" id="recipe-note" name="note" class="form-input" placeholder="z. B. bei 180°C Umluft" />
+              </div>
+            </div>
+          </div>
+
+          <fieldset class="form-group form-fieldset">
+            <legend class="form-label">Schwierigkeitsgrad</legend>
+            <div class="radio-group">
+              <label class="radio-option">
+                <input type="radio" name="difficulty" value="leicht" class="radio-option__input" checked />
+                Leicht
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="difficulty" value="mittel" class="radio-option__input" />
+                Mittel
+              </label>
+              <label class="radio-option">
+                <input type="radio" name="difficulty" value="fortgeschritten" class="radio-option__input" />
+                Fortgeschritten
+              </label>
+            </div>
+          </fieldset>
+
+          <div class="form-group">
+            <h2 class="form-label form-section-title">Zubereitungsschritte</h2>
+
+            <div class="step-input">
+              <span class="step-input__index" aria-hidden="true">1</span>
+              <div class="step-input__field">
+                <label for="step-1-text" class="visually-hidden">Beschreibung Schritt 1</label>
+                <textarea id="step-1-text" name="steps[1][text]" class="form-textarea step-input__textarea" placeholder="Wasser salzen und Spaghetti bissfest kochen."></textarea>
+                <label for="step-1-image" class="upload-field upload-field--compact">
+                  <svg class="upload-field__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="17 8 12 3 7 8"></polyline>
+                    <line x1="12" y1="3" x2="12" y2="15"></line>
+                  </svg>
+                  <span class="upload-field__text">Bild hinzufügen</span>
+                </label>
+                <input type="file" id="step-1-image" name="steps[1][image]" accept="image/*" class="visually-hidden" />
+              </div>
+              <button type="button" class="icon-btn step-input__delete" aria-label="Schritt 1 löschen">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="3 6 5 6 21 6"></polyline>
+                  <path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"></path>
+                  <path d="M10 11v6"></path>
+                  <path d="M14 11v6"></path>
+                </svg>
+              </button>
+            </div>
+
+            <div class="step-input">
+              <span class="step-input__index" aria-hidden="true">2</span>
+              <div class="step-input__field">
+                <label for="step-2-text" class="visually-hidden">Beschreibung Schritt 2</label>
+                <textarea id="step-2-text" name="steps[2][text]" class="form-textarea step-input__textarea" placeholder="Speck anbraten, bis er knusprig ist."></textarea>
+                <label for="step-2-image" class="upload-field upload-field--compact">
+                  <svg class="upload-field__icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="17 8 12 3 7 8"></polyline>
+                    <line x1="12" y1="3" x2="12" y2="15"></line>
+                  </svg>
+                  <span class="upload-field__text">Bild hinzufügen</span>
+                </label>
+                <input type="file" id="step-2-image" name="steps[2][image]" accept="image/*" class="visually-hidden" />
+              </div>
+              <button type="button" class="icon-btn step-input__delete" aria-label="Schritt 2 löschen">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <polyline points="3 6 5 6 21 6"></polyline>
+                  <path d="M19 6l-1 14a2 2 0 0 1-2 2H8a2 2 0 0 1-2-2L5 6"></path>
+                  <path d="M10 11v6"></path>
+                  <path d="M14 11v6"></path>
+                </svg>
+              </button>
+            </div>
+
+            <button type="button" class="btn btn--secondary add-step">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+                <line x1="12" y1="5" x2="12" y2="19"></line>
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+              </svg>
+              Schritt hinzufügen
+            </button>
+          </div>
+
+          <button type="submit" class="btn btn--primary btn--full">Rezept speichern</button>
+        </form>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

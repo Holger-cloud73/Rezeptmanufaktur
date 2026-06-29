@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 220" role="img" aria-label="Kochen">
+  <rect width="300" height="220" fill="#7FA15C"/>
+  <ellipse cx="150" cy="150" rx="100" ry="30" fill="#3E6A22"/>
+  <rect x="60" y="110" width="180" height="45" rx="10" fill="#4F7F2B"/>
+  <rect x="40" y="120" width="20" height="10" rx="4" fill="#3E6A22"/>
+  <rect x="240" y="120" width="20" height="10" rx="4" fill="#3E6A22"/>
+  <circle cx="110" cy="100" r="10" fill="#EAF4E3"/>
+  <circle cx="150" cy="95" r="12" fill="#EAF4E3"/>
+  <circle cx="190" cy="100" r="10" fill="#EAF4E3"/>
+</svg>

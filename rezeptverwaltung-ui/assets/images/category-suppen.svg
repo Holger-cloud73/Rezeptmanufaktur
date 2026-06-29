@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 220" role="img" aria-label="Suppen">
+  <rect width="300" height="220" fill="#E2935B"/>
+  <ellipse cx="150" cy="150" rx="90" ry="50" fill="#B85C2B"/>
+  <ellipse cx="150" cy="135" rx="90" ry="45" fill="#D9763A"/>
+  <rect x="60" y="120" width="20" height="14" rx="6" fill="#B85C2B"/>
+  <rect x="220" y="120" width="20" height="14" rx="6" fill="#B85C2B"/>
+  <path d="M120 90 q10 -20 0 -30" stroke="#FCEBD8" stroke-width="6" fill="none" opacity="0.8"/>
+  <path d="M150 85 q10 -20 0 -30" stroke="#FCEBD8" stroke-width="6" fill="none" opacity="0.8"/>
+  <path d="M180 90 q10 -20 0 -30" stroke="#FCEBD8" stroke-width="6" fill="none" opacity="0.8"/>
+</svg>

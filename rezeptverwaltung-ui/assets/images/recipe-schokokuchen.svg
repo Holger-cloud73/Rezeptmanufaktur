@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 220" role="img" aria-label="Schokoladenkuchen">
+  <rect width="300" height="220" fill="#5A3A2A"/>
+  <ellipse cx="150" cy="160" rx="100" ry="22" fill="#3C2519"/>
+  <rect x="70" y="100" width="160" height="60" rx="8" fill="#6B4530"/>
+  <path d="M70 100 q80 -28 160 0" fill="#7A4F37"/>
+  <circle cx="120" cy="95" r="6" fill="#3C2519"/>
+  <circle cx="160" cy="90" r="6" fill="#3C2519"/>
+  <circle cx="190" cy="98" r="6" fill="#3C2519"/>
+</svg>
